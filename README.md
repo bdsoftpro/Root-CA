@@ -72,3 +72,8 @@ and setting `security.enterprise_roots.enabled` to `true`.
 
 The other way is to import the certificate by going
 to `about:preferences#privacy` > `Certificats` > `Import` > `RootCA.pem` > `Confirm for websites`.
+  
+#### Otherwise
+[Building Tutorial](https://dadhacks.org/2017/12/27/building-a-root-ca-and-an-intermediate-ca-using-openssl-and-debian-stretch/)  
+  
+  
