@@ -18,7 +18,14 @@ Generate `RootCA.pem`, `RootCA.key` & `RootCA.crt`:
 	openssl x509 -in RootCA.crt -out RootCA.pem
 	
 	openssl x509 -in RootCA.pem -text
+## OR
+	openssl genrsa -out RootCA.key 2048
+	openssl req -x509 -new -nodes -key RootCA.key -sha256 -days 3650 -out RootCA.pem
+	openssl x509 -outform pem -in RootCA.pem -out RootCA.crt
 
+	openssl x509 -in RootCA.crt -out RootCA.pem
+
+	openssl x509 -in RootCA.pem -text
 Note that `Example-Root-CA` is an example, you can customize the name.
 
 
