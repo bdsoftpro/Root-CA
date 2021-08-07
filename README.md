@@ -16,6 +16,8 @@ Generate `RootCA.pem`, `RootCA.key` & `RootCA.crt`:
 	openssl x509 -outform pem -in RootCA.pem -out RootCA.crt
 	
 	openssl x509 -in RootCA.crt -out RootCA.pem
+	
+	openssl x509 -in rootCACert.pem -text
 
 Note that `Example-Root-CA` is an example, you can customize the name.
 
